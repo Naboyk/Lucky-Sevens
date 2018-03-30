@@ -1,0 +1,1 @@
+if startingBet(input > 0)
