@@ -2,12 +2,13 @@
 <html>
 	<head> 
 		<title>Lucky Sevens</title>	
+		<script src="./luckySevens.js"></script>
 	</head>
-	<body>
+	<body onload="hideResults()">
 <!-- Betting -->
 		<div id="luckeySevens">
 			<h1> Lucky Sevens </h1>
-			<span>Starting Bet:<input type="number" name="startingBet" id="bet" placeholder="$0.00"></input></span><br />
+			<span>Starting Bet:<input type="number" name="bet" id="startingBetInput" placeholder="$0.00"></input></span><br />
 			<button onclick="play()" name="play" id="playButton">Play</button>
 			</form>
 		</div>
@@ -18,22 +19,21 @@
 			<caption><h3>Results</h3></caption>
 				<tr>
 					<th>Starting Bet</th>
-					<th id="startBet"></th>
+					<th id="startingBet"></th>
 				</tr>
 				<tr>
 					<td>Total Rolls Before Going Broke</td>
-					<td id="broke"></td>
+					<td id="totalPlays"></td>
 				</tr>
 				<tr>
 					<td>Highest Amount Won</td>
-					<td id="won"></td>
+					<td id="highestGameMoney"></td>
 				</tr>
 				<tr>
 					<td>Roll Count at Highest Amount Won</td>
-					<td id="highestRoll"></td>
+					<td id="rollCountAtHighestGameMoney"></td>
 				</tr>
 			</table>
 		</div>
-	<script type="text/JavaScript" src="luckySevens.js"></script>
 	</body>
 </html>
