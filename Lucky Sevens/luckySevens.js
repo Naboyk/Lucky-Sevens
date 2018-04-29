@@ -13,7 +13,7 @@ function play() {
             if (rollDice() == 7) {
                 gameMoney += 4;
                 totalPlays++;
-                //The if function bellow is used to calculate the highest game money earned and when that game money was earned on
+                //The if function bellow is used to calculate the highest game money earned and when that game money was earned on. 
                 if (gameMoney > highestGameMoney) {
                     highestGameMoney = gameMoney;
                     rollCountAtHighestGameMoney = totalPlays;
@@ -49,7 +49,7 @@ function getStartingBet() {
         alert("Error, please input a bet greather than 0");
     }
 }
-// function to roll 2, 6 sided die
+// function to roll two 6 sided die
 function rollDice(totalPlays) {
     var die1 = Math.floor(Math.random() * 6) + 1;
     var die2 = Math.floor(Math.random() * 6) + 1;
